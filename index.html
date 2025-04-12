@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Beo1</title>
+    </head>
+    <body>
+        
+        <div id="result"></div>
+        <div class="textCont"><b>Points:</b>
+            <div class="points">
+                <p>Player: </p>
+                <p id="playerPoint">0</p>
+                <p>|</p>
+                <p>Computer: </p>
+                <p id="computerPoint">0</p>
+            </div>
+        </div>
+        
+        <div class="cont noRepCover">
+            <div class="countdown" id="countdown"></div>
+                
+            
+            <div class="side left">
+                <div class="p1 pic noRepCover mirror other" id="rock" onclick="main(1)"></div>
+                <div class="p2 pic noRepCover mirror other" id="paper" onclick="main(2)"></div>
+                <div class="p3 pic noRepCover mirror other" id="scissors" onclick="main(3)"></div>
+            </div>
+            
+            <div class="side right">
+                <div class="p1 pic noRepCover noClick" id="cRock"></div>
+                <div class="p2 pic noRepCover noClick" id="cPaper"></div>
+                <div class="p3 pic noRepCover noClick" id="cScissors"></div>
+            </div>
+        
+        </div>
+        
+        <div class="buttonWrap">
+            <button id="nextGame" onclick="nextOne()">Next Game</button>
+        </div>
+    </body>
+</html>
